@@ -1,0 +1,21 @@
+.reg-formularios {
+    background-color: #ffff;
+}
+
+.reg-botones button{
+    background-color: var(--celeste);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+
+.reg-botones button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.reg-formularios h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}

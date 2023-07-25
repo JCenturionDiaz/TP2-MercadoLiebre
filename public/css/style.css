@@ -1,0 +1,268 @@
+@import "register.css";
+@import "login.css";
+
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gris-claro);
+} 
+
+main section{
+    width: 90vw;
+    margin: auto;
+}
+
+header{
+    background-color: var(--amarillo);
+    padding: 10px;
+}
+
+.header-superior{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+.buscador{
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-banner{
+    width: 100vw;
+}
+
+.input{
+    background-color: white;
+    border: 1px solid #000;
+    color: var(--gris-oscuro);
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.icono-lupa{
+    background-color: white;
+    border-left: 1px solid #000;
+    color: var(--gris-oscuro);
+    width: 10%;
+    position: absolute;
+    right: 10px;
+    padding: 3px;
+}
+
+.forma-de-pago{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3.titulares{
+    font-size: 24px;
+}
+
+p.precios{
+    font-size: 18px;
+    width: 30%;
+    text-align: left;
+}
+
+p.descuentos{   
+    font-size: 16px;
+    width: 70%;
+    color: var(--verde);
+    text-align: right;
+}
+
+h4.descripciones{
+    font-size: 16px;
+    display: none;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color: var(--celeste);
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+article{
+    margin-bottom: 10px;
+    background-color: #fff;
+    width: 80%;
+}
+
+article img{
+    width: 100%;
+}
+
+article:hover .descripciones{
+    display: block;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article:hover .fa-truck{
+    transform: rotate(-90deg);
+}
+
+.product-info{
+    border-top: 1px solid var(--gris-claro);
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.product-info i{
+    color: var(--verde);
+    display: flex;
+    font-size: 1.2em;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.55s;
+}
+
+.header-superior{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav{
+    display: none;
+}
+
+@media (min-width: 361px){
+    .main-banner{
+        padding-right: 20px;
+    }
+    .product-info{
+        display: block;
+    }
+    article{
+        width: 40%;
+    }
+    .productos{
+        justify-content: space-around;
+    }
+    nav{
+        display: block;
+        padding-left: 5%;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    .logo{
+        width: 25%;
+    }
+}
+
+@media (min-width: 769px){
+    .header-superior{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+    
+    nav ul li{
+        margin: 5px;
+    }
+
+    article{
+        width: 20%;
+    }
+    .productos{
+        justify-content: space-between;
+    }
+}
+
+footer{
+    border-top: 1px solid var(--gris-claro);
+    color: var(--gris-oscuro);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.footer-icons{
+    color: var(--celeste);
+    padding-bottom: 10px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer section{
+    background-color: #FFF;
+    padding: 30px 30px;
+}
