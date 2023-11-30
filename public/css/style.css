@@ -276,6 +276,7 @@ nav{
 }
 
 footer{
+    background-color: #fff;
     border-top: 1px solid var(--gris-claro);
     color: var(--gris-oscuro);
     text-align: center;
